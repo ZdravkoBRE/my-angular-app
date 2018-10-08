@@ -10,6 +10,12 @@ import { InitCapsPipe } from './shared/init-caps.pipe';
 import { LoginModule } from './login/login.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminModule } from './admin/admin.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+// tslint:disable-next-line:max-line-length
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,28 @@ import { AdminModule } from './admin/admin.module';
     OrdersComponent,
     SearchBoxDirective,
     InitCapsPipe,
-    DashboardComponent
+    DashboardComponent,
+    NavComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    AdminModule
+    AdminModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
